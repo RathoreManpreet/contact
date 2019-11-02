@@ -1,19 +1,26 @@
 {
-    "name": "mannfy/contact",
-    "description": "This is my first package to create contact package",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Manpreet Singh",
-            "email": "itmanpreet94@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Mannfy\\Contac\\": "src/"
-        }
+  "name": "mannfy/contact",
+  "description": "This is my first package to create contact package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Manpreet Singh",
+      "email": "itmanpreet94@gmail.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Mannfy\\Contac\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mannfy\\Contact\\ContactServiceProvider"
+      ]
+    }
+  }
 }
